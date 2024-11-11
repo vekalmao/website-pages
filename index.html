@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExplitBot - Your All-in-One Discord Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Main container styling */
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    /* Feature list styling */
+    .features {
+      list-style: none;
+      text-align: left;
+      margin: 1rem auto;
+    }
+
+    .features li {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .features li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      color: #ffdd57;
+      animation: bounceIn 1s ease-out;
+    }
+
+    /* Button styling */
+    .cta-button {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #4e54c8;
+      background: #ffffff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      background: #ffdd57;
+      color: #4e54c8;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ExplitBot</h1>
+    <h2>Your All-in-One Discord Bot</h2>
+    <p>ExplitBot offers powerful features that rival the best, including Dyno, Carl-bot, and more!</p>
+
+    <ul class="features">
+      <li>Auto Moderation - Keep your community safe and clean</li>
+      <li>Custom Commands - Personalize your server experience</li>
+      <li>Role Management - Automate role assignments and permissions</li>
+      <li>Welcome and Goodbye Messages - Greet and farewell users automatically</li>
+      <li>Music and Entertainment - Play music and games directly in your server</li>
+      <li>Reaction Roles - Let users pick their roles easily</li>
+      <li>Logging - Keep track of all server activities</li>
+      <li>And much more!</li>
+    </ul>
+
+    <a href="#" class="cta-button">Invite ExplitBot Now</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 ExplitBot. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
